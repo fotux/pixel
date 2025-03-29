@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@source "../views";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Hanken Grotesk", sans-serif;
+      --color-black: #060606;
+      --font-xss: 0.625rem;
+
+}
+
+@layer utilities{
+    .text-xss {
+        font-size: var(--font-xss);
+    }
+}
